@@ -3,6 +3,7 @@
 sudo apt-get install qemu-utils qemu-efi-aarch64 qemu-system-arm
 
 wget https://cdimage.debian.org/cdimage/openstack/current/debian-10-openstack-arm64.qcow2
+# or wget http://cloud-images.ubuntu.com/daily/server/focal/current/focal-server-cloudimg-arm64.img
 
 sudo modprobe nbd
 sudo qemu-nbd -c /dev/nbd0 debian-10-openstack-arm64.qcow2
